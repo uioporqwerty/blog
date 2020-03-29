@@ -4,8 +4,8 @@ module.exports = {
     author: {
       name: `Nitish Sachar`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `Bytes of information, one post at a time.`,
+    siteUrl: `https://nybble.app`,
     social: {
       github: `uioporqwerty`,
       linkedin: `nitish-sachar`,
@@ -61,13 +61,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Nybble`,
+        short_name: `Nybble`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/site-icon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
