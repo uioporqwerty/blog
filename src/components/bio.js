@@ -30,11 +30,6 @@ const Bio = () => {
   `)
 
   const { author, social } = data.site.siteMetadata
-  const styles = {
-    socialLink: {
-      textDecoration: "none",
-    },
-  }
   return (
     <div
       style={{
