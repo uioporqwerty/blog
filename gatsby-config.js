@@ -9,6 +9,7 @@ module.exports = {
     social: {
       github: `uioporqwerty`,
       linkedin: `nitish-sachar`,
+      resume: `https://1drv.ms/b/s!At-XTckMqFENyjTGnHffd7FFyqc-`,
     },
   },
   plugins: [

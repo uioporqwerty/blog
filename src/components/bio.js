@@ -1,8 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
-
 import { rhythm } from "../utils/typography"
+import { FaLinkedinIn, FaGithub, FaFileAlt } from "react-icons/fa"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -22,6 +22,7 @@ const Bio = () => {
           social {
             github
             linkedin
+            resume
           }
         }
       }
@@ -29,6 +30,11 @@ const Bio = () => {
   `)
 
   const { author, social } = data.site.siteMetadata
+  const styles = {
+    socialLink: {
+      textDecoration: "none",
+    },
+  }
   return (
     <div
       style={{
@@ -51,8 +57,33 @@ const Bio = () => {
       />
       <p>
         Written by <strong>{author.name}</strong>.
-        <a href={`https://twitter.com/${social.linkedin}`}>
-          You should follow him on Twitter
+        <br />
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href={`https://linkedin.com/in/${social.linkedin}`}
+        >
+          <FaLinkedinIn size={20} />
+        </a>
+        <a
+          style={{
+            marginLeft: 10,
+          }}
+          rel="noopener noreferrer"
+          target="_blank"
+          href={`https://github.com/${social.github}`}
+        >
+          <FaGithub size={20} />
+        </a>
+        <a
+          style={{
+            marginLeft: 10,
+          }}
+          rel="noopener noreferrer"
+          target="_blank"
+          href={`${social.resume}`}
+        >
+          <FaFileAlt size={20} />
         </a>
       </p>
     </div>
