@@ -83,6 +83,7 @@ module.exports = {
         precachePages: ["/*"],
       },
     },
+    "gatsby-plugin-netlify-cache",
     {
       resolve: "gatsby-plugin-guess-js",
       options: {
