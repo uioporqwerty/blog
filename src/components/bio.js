@@ -57,6 +57,8 @@ const Bio = () => {
           rel="noopener noreferrer"
           target="_blank"
           href={`https://linkedin.com/in/${social.linkedin}`}
+          title="LinkedIn"
+          aria-label="LinkedIn"
         >
           <FaLinkedinIn size={20} />
         </a>
@@ -67,6 +69,8 @@ const Bio = () => {
           rel="noopener noreferrer"
           target="_blank"
           href={`https://github.com/${social.github}`}
+          title="Github"
+          aria-label="Github"
         >
           <FaGithub size={20} />
         </a>
@@ -77,6 +81,8 @@ const Bio = () => {
           rel="noopener noreferrer"
           target="_blank"
           href={`${social.resume}`}
+          title="Resume"
+          aria-label="Resume"
         >
           <FaFileAlt size={20} />
         </a>
